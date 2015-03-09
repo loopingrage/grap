@@ -13,9 +13,7 @@ Dec 08 03:00:16.035 DEBUG  Something interesting happened
 Dec 08 03:00:15.035 DEBUG  Something interesting happened
 ```
 
-Anything look out of place to you? Probably not. humans are not very good at performing repetitive tasks.
-
-Let's run grap to see what it finds:
+Anything look out of place to you? Probably not. humans are not very good at performing repetitive tasks. Let's run grap to see what it finds:
 
 ```
 # grap test/sample.log
@@ -23,3 +21,5 @@ Dec 08 03:00:14.025 DEBUG  Something interesting happened
 Dec 08 02:00:14.038 DEBUG  Something interesting happened
 Dec 08 03:00:15.035 DEBUG  Something interesting happened
 ```
+
+Hmm. It seems that 3 log lines are out of sequence. The first one is a few milliseconds back in time, the second about an hour and the third a fujll second before the previous line.
