@@ -1,6 +1,12 @@
 # GRAP
 Utility that GReps for gAPs and out of sequence line in log files
 
+## Installing
+```
+npm install grap -g
+```
+
+## Usage
 For example, given the logs file in `test/sample.log`:
 
 ```
